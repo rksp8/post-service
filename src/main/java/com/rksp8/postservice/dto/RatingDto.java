@@ -6,17 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
-@Data
 @Builder
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
-public class PostDto {
+@NoArgsConstructor
+public class RatingDto {
 
     private Long id;
-    private String content;
+    private Integer rating;
+    private String comment;
+    private Long postId;
     private String author;
     private LocalDateTime createdAt;
-    private List<RatingDto> ratings;
 }
